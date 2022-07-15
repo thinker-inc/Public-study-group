@@ -14,6 +14,11 @@ end
 class TokyoHuang < Huang
     attr_accessor :city
 
+    def initialize(name, age, city)
+      super(name, age)
+      @city=city
+    end
+
     def sencond(city)
         @city = city
     end
