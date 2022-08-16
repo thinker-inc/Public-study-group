@@ -1,1 +1,0 @@
-SELECT * FROM a8_result
