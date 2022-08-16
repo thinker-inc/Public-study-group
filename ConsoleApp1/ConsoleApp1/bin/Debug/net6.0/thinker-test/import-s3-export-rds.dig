@@ -1,0 +1,48 @@
+timezone: UTC
+
+#schedule:
+  #daily>: 17:31:00
+
+# load
++a8_load:
+  td_load>: config/daily_load_a8.yml
+  database: tableau_prep_test
+  table: a8_result
+
++felma_load:
+  td_load>: config/daily_load_felma.yml
+  database: tableau_prep_test
+  table: felma_result
+  
++rentracks_load:
+  td_load>: config/daily_load_rentracks.yml
+  database: tableau_prep_test
+  table: rentracks_result
+
+# output
++a8_output:
+  td>: queries/a8_result.sql
+  database: tableau_prep_test
+  result_connection: workflow_text_mysql
+  result_settings:
+    database: tableau_prep_test
+    table: a8_result
+    mode: append
+
++felma_output:
+  td>: queries/felma_result.sql
+  database: tableau_prep_test
+  result_connection: workflow_text_mysql
+  result_settings:
+    database: tableau_prep_test
+    table: felma_result
+    mode: append
+
++rentracks_output:
+  td>: queries/rentracks_result.sql
+  database: tableau_prep_test
+  result_connection: workflow_text_mysql
+  result_settings:
+    database: tableau_prep_test
+    table: rentracks_result
+    mode: append
