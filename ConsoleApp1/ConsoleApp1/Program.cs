@@ -17,27 +17,6 @@ public class ToolbeltCallTool
                 ApiKey = "***/*****",
                 EndPoint = "https://api.treasuredata.com"
             },
-            new TdSiteInfo {
-                Name = "Flipdesk",
-                ApiKey = "***/*****",
-                EndPoint = "https://api.treasuredata.com"
-            },
-            new TdSiteInfo {
-                Name = "Puma",
-                ApiKey = "***/*****",
-                EndPoint = "https://api.treasuredata.co.jp"
-            },
-            new TdSiteInfo {
-                Name = "Diesel",
-                ApiKey = "***/*****",
-                EndPoint = "https://api.treasuredata.co.jp"
-            },
-            new TdSiteInfo {
-                Name = "UsenMedia",
-                ApiKey = "***/*****",
-                EndPoint = "https://api.treasuredata.co.jp"
-            },
-
         };
 
         foreach (var site in sites)
